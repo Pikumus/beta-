@@ -1,5 +1,5 @@
 interface Cart_Item {
   id: number;
-  product_id: number;
+  productId: number;
   quantity: number;
 }

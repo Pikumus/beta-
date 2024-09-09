@@ -25,8 +25,8 @@ export const useItemCartStore = defineStore("cartStore", () => {
 
   async function addItemToCart(productId: number, quantity: number) {
     try {
-      await di.cartRepository.addCart(productId, quantity);
-      await fetchItemCart();
+      await di.cartRepository.postCart(productId, quantity);
+      await fetchItemCart(); // Обновляем корзину после добавления товара
     } catch (error) {
       console.error("Error adding item to cart:", error);
     }

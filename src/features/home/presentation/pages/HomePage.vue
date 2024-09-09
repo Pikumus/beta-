@@ -35,7 +35,7 @@ onMounted(async () => {
           <div class="flex items-center gap-3">
             <common-plus
               :price="product.price"
-              :product_id="product.id"
+              :productId="product.id"
               :quantity="0"
             />
           </div>

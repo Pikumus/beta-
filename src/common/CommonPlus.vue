@@ -50,7 +50,7 @@ const props = defineProps({
     type: Number,
     required: true,
   },
-  product_id: {
+  productId: {
     type: Number,
     required: true,
   },
@@ -79,7 +79,7 @@ function decrement() {
 
 // Функция для добавления в корзину
 async function addToCart() {
-  await store.addItemToCart(props.product_id, props.quantity);
+  await store.addItemToCart(props.productId, localQuantity.value);
 }
 </script>
 
